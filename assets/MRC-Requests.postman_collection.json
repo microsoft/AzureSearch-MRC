@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "95608c8f-13b1-44e2-b2ca-c3fc68ba30c1",
+		"name": "MRC Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MRC API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Who is the CEO if Microsoft?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7071/api/MRC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7071",
+					"path": [
+						"api",
+						"MRC"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MRC API Deployed",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"Who is the CEO if Microsoft?\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mrc-test.azurewebsites.net/api/MRC?code=insert function code here",
+					"protocol": "https",
+					"host": [
+						"mrc-test",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"MRC"
+					],
+					"query": [
+						{
+							"key": "code",
+							"value": "insert function code here"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

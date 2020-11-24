@@ -1,0 +1,6 @@
+.vscode/
+MRC/__pycache__/
+assets/
+config.ini
+config.sample.ini
+README.md
