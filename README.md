@@ -108,10 +108,10 @@ As already described above, their meaning and default values would look as follo
 ```json
 {
     "question": "Who is the CEO of Microsoft?",
-    "az_documents": 5, # documents to be requested from the Azure Search
-    "az_treshold": 5, # minimum TF-IDF relevance score to accept the document from Azure Search
-    "az_tokenize": True, # tokenize sentences to extract paragraphs
-    "bm_ndoc": 3 # Amount of documents to be returned by BM25
+    "az_documents": 5, // documents to be requested from the Azure Search
+    "az_treshold": 5, // minimum TF-IDF relevance score to accept the document from Azure Search
+    "az_tokenize": True, // tokenize sentences to extract paragraphs
+    "bm_ndoc": 3 // amount of documents to be returned by BM25
 }
 ``` 
 An increase of `az_documents` and `bm_ndoc` may lead to a larger document corpus with a greater likeliness to find a match, however they may increase the processing time significantly. Decreasing `az_treshold` may also increase this effect. Deactivating the sentence tokenizer `az_tokenize` may lead to smaller text chunks, which may reduce the recognition quality.
