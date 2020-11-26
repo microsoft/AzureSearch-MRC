@@ -93,7 +93,7 @@ You can either send a request body or the address string, however we recommend u
 ``` 
 
 If you want to pass further optional parameters to tweak the results a bit, look at the following body:
-```json
+```
 {
     "question": "Who is the CEO of Microsoft?",
     "az_documents": 8,
@@ -104,7 +104,7 @@ If you want to pass further optional parameters to tweak the results a bit, look
 ``` 
 
 As already described above, their meaning and default values would look as following:
-```json
+```
 {
     "question": "Who is the CEO of Microsoft?",
     "az_documents": 5, // documents to be requested from the Azure Search
