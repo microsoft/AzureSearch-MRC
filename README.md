@@ -25,7 +25,6 @@ The Python packages that are additionally required are `azure-functions`, `torch
 - Transformers is backed by the two most popular deep learning libraries, PyTorch and TensorFlow, with a seamless integration between them, allowing you to train your models with one then load it for inference with the other.
 - In our setup, Transformers are used to search the text returned by Azure Functions and the filtering mechanisms of our pipeline.
 - The pre-trained models are available on [huggingface.co](https://huggingface.co/models). Usually, they are downloaded directly by the script, however this may be restricted depending on the company policy, as the models are hosted on AWS.
-- We have configured the function the way that we upload the model during the deployment, so no further model download has to be done during the deployment (limitation of accessing AWS resources exist)
 
 ## Architecture
 The MRC component receives a request from the API backend after a user types in a specific question he or she wants to loop up for. The Function sends a request to the Azure Cognitive Search, asking for a collection of documents matching to the incoming question. After receiving the results, the documents are processed and checked for potential answers. The Function responds with a JSON containing the potential answers.
