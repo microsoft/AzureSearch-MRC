@@ -150,7 +150,7 @@ First, you have to install/set up following components:
     - Framework to test endpoints, download it [here](https://www.postman.com/downloads/)
 
 ### Testing and Debugging
-1. Get your code from Azure DevOps or the respective repository (07 - SCIO MRC)
+1. Get your code from GitHub
 1. Create a virtual environment <u>outside</u> of the project folder: `python –m venv venv`
 1. Activate the virtual environment: `source venv/bin/activate` (Linux) or `venv/Scripts/activate` (Windows), `deactivate` um zu deaktivieren
 1. Install the requirements: `pip install -r requirements.txt`
