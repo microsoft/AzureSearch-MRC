@@ -2,10 +2,8 @@
 # The Python Worker is managed by Azure Functions platform
 # Manually managing azure-functions-worker may cause unexpected issues
 azure-functions==1.4.0
-#torch===1.6.0 -f https://download.pytorch.org/whl/torch_stable.html
 torch===1.5.1
 torchvision===0.6.1
-#torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
 transformers==3.4.0
 azure-search-documents==11.0.0
 nltk==3.6.5
