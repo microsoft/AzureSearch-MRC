@@ -4,6 +4,6 @@
 azure-functions==1.4.0
 torch===1.5.1
 torchvision===0.6.1
-transformers==3.4.0
+transformers==4.30.0
 azure-search-documents==11.0.0
 nltk==3.6.5
